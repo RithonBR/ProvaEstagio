@@ -1,6 +1,6 @@
 def novoProduto():
     import produtos
-    import testes
+    import ListaProduto
     import main
     print("-"*22)
     print("Choice : New Product")
@@ -32,7 +32,7 @@ def novoProduto():
 def produtosRegistrados():
     import produtos
     import main
-    import testes
+    import ListaProduto
     print("-" * 22)
     print("Products STOCK :")
     print(testes.Lista.listaProds2(produtos._itens))
