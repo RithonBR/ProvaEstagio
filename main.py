@@ -1,5 +1,6 @@
 
 def escolhaMenu():
+    #interface basica
     print("Type 1 to Create new Product")
     print("Type 2 to Show registered Product")
     print("Type 3 to Create new employee")
@@ -17,6 +18,7 @@ def validarEscolha(escolha):
     import funcionarios
     import clientes
     import vendas
+    # Validacao de caracter correto
     if escolha == 1:
         produtos.novoProduto()
     elif escolha == 2:

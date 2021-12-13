@@ -1,6 +1,10 @@
 def novaVenda():
     import vendas
     import main
+    # Nao consegui terminar
+
+
+
     continuarvendas = 0
     print("-" * 22)
     print("Choice : New Sale")
