@@ -1,5 +1,6 @@
 def novoProduto():
     import produtos
+    import testes
     import main
     print("-"*22)
     print("Choice : New Product")
@@ -17,6 +18,7 @@ def novoProduto():
     else:
         continuarProd = 0
         produtos.estoque = listaProds(idprod,nomenovoprod,precoDoProduto,qntDoProduto)
+        _itens = testes.Lista.addProd(produtos.estoque)
         print("New Product Listed")
         continuarProd = int(input("1. Continue / 2. Back to menu : "))
         if continuarProd == 1:
@@ -30,9 +32,10 @@ def novoProduto():
 def produtosRegistrados():
     import produtos
     import main
+    import testes
     print("-" * 22)
     print("Products STOCK :")
-    print(estoque)
+    print(testes.Lista.listaProds2(produtos._itens))
     print("-" * 22)
     escolhaProdRegistrado= int(input("do you want to add a new product? 1. Yes // 2. No : "))
     if escolhaProdRegistrado == 1:
@@ -44,5 +47,8 @@ def produtosRegistrados():
 
 def listaProds(idprod,name, price, amount):
     return [idprod,name, price, amount]
+
+
 estoque = []
+_itens = []
 idprod=0

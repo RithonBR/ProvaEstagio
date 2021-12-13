@@ -1,6 +1,10 @@
-idprod=1
-    print("Product Id :",idprod)
-    nomenovoprod = str(input("Product's name:"))
-    nomenovoprod.title()
-    precoDoProduto = float(input("Product's price :"))
-    qntDoProduto = int(input("Amount :"))
+class Lista():
+    import produtos
+
+    def addProd(prod):
+        import produtos
+        produtos._itens.append(prod)
+
+    def listaProds2(self):
+        import produtos
+        return produtos._itens
