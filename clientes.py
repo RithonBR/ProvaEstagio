@@ -16,6 +16,7 @@ def novoCliente():
     idadeClien = int(input("Customer's Age :"))
 
     clientes.clientsList = listaClient(idcli,nomenovoClien,enderecClien,idadeClien)
+    _itensClientes= ListaClientes.ListaCliente.addClie(clientes.clientsList)
     print("New Employee Listed")
     continuarClie = int(input("1. Continue / 2. Back to menu : "))
     if continuarClie == 1:
@@ -30,9 +31,9 @@ def todosClient():
     import main
     print("-" * 22)
     print("Employees :")
-    print(ListaClientes.ListaCliente.clientes.listaClie2(clientes._itensClientes))
+    print(ListaClientes.ListaCliente.listaClie2(clientes._itensClientes))
     print("-" * 22)
-    escolhaclienRegistrado = int(input("do you want to add a new product? 1. Yes // 2. No : "))
+    escolhaclienRegistrado = int(input("do you want to add a new Customer? 1. Yes // 2. No : "))
     if escolhaclienRegistrado == 1:
         clientes.novoCliente()
     elif escolhaclienRegistrado == 2:
