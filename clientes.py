@@ -1,3 +1,6 @@
+import ListaClientes
+
+
 def novoCliente():
     import clientes
     import main
@@ -27,7 +30,7 @@ def todosClient():
     import main
     print("-" * 22)
     print("Employees :")
-    print(clientsList)
+    print(ListaClientes.ListaCliente.clientes.listaClie2(clientes._itensClientes))
     print("-" * 22)
     escolhaclienRegistrado = int(input("do you want to add a new product? 1. Yes // 2. No : "))
     if escolhaclienRegistrado == 1:
@@ -41,3 +44,4 @@ def listaClient(idcli,name, adress, age):
 
 clientsList = []
 idcli = 0
+_itensClientes = []
