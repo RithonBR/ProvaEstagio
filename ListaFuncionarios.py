@@ -1,10 +1,10 @@
-class Lista():
-    import produtos
+class ListaFuncionarios():
+    import funcionarios
 
-    def addProd(prod):
-        import produtos
-        produtos._itens.append(prod)
+    def addFunc(prod):
+        import funcionarios
+        funcionarios._itensFunc.append(prod)
 
-    def listaProds2(self):
-        import produtos
-        return produtos._itens
+    def listaFunc2(self):
+        import funcionarios
+        return funcionarios._itensFunc

@@ -1,3 +1,4 @@
+import ListaFuncionarios
 def novoFuncionario():
     import funcionarios
     import main
@@ -14,6 +15,7 @@ def novoFuncionario():
     wageFunc = float(input("Employees's wage :"))
 
     funcionarios.funcionariosList = listaFunc(idfun,nomenovoFunc,enderecFunc,idadeFunc,wageFunc)
+    _itensfunc = ListaFuncionarios.ListaFuncionarios.addFunc(funcionarios.funcionariosList)
     print("New Employee Listed")
     continuarFunc = int(input("1. Continue / 2. Back to menu : "))
     if continuarFunc == 1:
@@ -28,7 +30,7 @@ def todosFuncionarios():
     import main
     print("-" * 22)
     print("Employees :")
-    print(funcionariosList)
+    print(ListaFuncionarios.ListaFuncionarios.listaFunc2(funcionarios._itensFunc))
     print("-" * 22)
     escolhaFuncRegistrado = int(input("do you want to add a new Employee? 1. Yes // 2. No : "))
     if escolhaFuncRegistrado == 1:
@@ -42,3 +44,4 @@ def listaFunc(idfun,name, adress, age , wage):
 
 funcionariosList = []
 idfun = 0
+_itensFunc = []
